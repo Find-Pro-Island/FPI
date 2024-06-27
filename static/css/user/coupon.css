@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+div{
+  display: block;
+}
+ul{
+  padding: 0;
+}
+/* 앞에 점 없앰 */
+ul,li{
+  list-style: none;
+}
+/* 밑줄 없앰 */
+a{
+  text-decoration-line: none;
+  color: black;
+
+}
+h1{
+  margin: 0;
+  font-size: 40px;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40rem;
+  min-height: 100%;
+}
+.padding3{
+  padding: 3rem 0 0 0;
+  
+}
+.center{
+  text-align: center !important;
+}
