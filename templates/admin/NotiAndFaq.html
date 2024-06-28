@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공지게시판</title>
+    <link rel="stylesheet" href="../../static/css/admin/NotiHeader.css">
+    <link rel="stylesheet" href="../../static/css/admin/NotiAndFaq.css">
+</head>
+<body>
+<div class="header">
+    <div class="in-header">
+        <div class="logo">
+            <a href="#">
+                <img src="https://help.soomgo.com/hc/theming_assets/01HZM2PTPGGCP4P9CXADCNWPWC" alt="로고">
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <a href="#">
+                공지사항
+            </a>
+            <a href="#">
+                <!--        자유게시판 될지도?      -->
+                자주묻는질문
+            </a>
+        </div>
+
+    </div>
+    <div class="container-divider"></div>
+    <div class="container-blank"></div>
+</div>
+<!--<div th:replace="~{/layout/header :: header}"></div>-->
+<div class="container">
+    <div class="sub-nav">
+        <ol>
+            <li title="공지사항">
+                <a href="#">공지사항</a>
+            </li>
+        </ol>
+        <form class="search" method="get">
+            <input type="search" name="query" id="query" placeholder="검색" aria-label="검색">
+        </form>
+    </div>
+    <div class="category-container">
+        <div class="category-content">
+            <div class="section-tree">
+                <section>
+                    <h1 class="section-tree-title">
+                        <a href="#">공지사항</a>
+                    </h1>
+                    <ul class="article-list">
+                        <li class="article-list-item">
+                            <a href="#" class="article-list-link">
+                                [00.00.00] 기사제목
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <a href="#" class="article-list-link">
+                                [00.00.00] 기사제목
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="see-all-articles">
+                        더보기
+                    </a>
+                </section>
+                <section>
+                    <h1 class="section-tree-title">
+                        <a href="#">자주 묻는 질문</a>
+                    </h1>
+                    <ul class="article-list">
+                        <li class="article-list-item">
+                            <a href="#" class="article-list-link">
+                                [00.00.00] 질문제목
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <a href="#" class="article-list-link">
+                                [00.00.00] 질문제목
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="see-all-articles">
+                        더보기
+                    </a>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
