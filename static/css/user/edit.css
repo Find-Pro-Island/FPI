@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.option-group-selectbox {
+  width: 300px;
+}
+
+.option-group-selectbox ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-group-selectbox li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.option-group-selectbox li.level1 {
+  background-color: #f9f9f9;
+}
+
+.option-group-selectbox li.level2 {
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.option-group-selectbox li.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.option-group-selectbox li.parent span {
+  display: inline-block;
+  width: calc(100% - 30px);
+}
+
+.option-group-selectbox li.parent::after {
+  content: "▶";
+  float: right;
+  margin-right: 10px;
+}
+
+.option-group-selectbox li.expanded::after {
+  content: "▼";
+}
+
+.loading-indicator {
+  display: none;
+}
