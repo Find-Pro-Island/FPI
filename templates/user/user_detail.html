@@ -77,8 +77,8 @@
             <div class="title">탈퇴하시려면 본인 이름을 작성해주세요</div>
             <input class="input-box" name="text" placeholder="본인이름 작성" type="text">
 
-          <!--내 정보 수정으로  -->
-          <a href="#"  class="btn">탈퇴하지 않겠습니다</a>
+          <!--모달 창 닫음 -->
+          <button type="button" id="close-modal"  class="btn">탈퇴하지 않겠습니다</button>
           <!-- 탈퇴완료창->로그아웃&메인페이지로이동 -->
           <a href="#" class="btn">탈퇴하기</a>
           </form>
@@ -100,11 +100,19 @@
   function modalOff() {
       modal.style.display = "none"
   }
+  // 모달창 보임
   const btnModal = document.getElementById("btn-modal")
-
   btnModal.addEventListener("click", e => {
           modalOn()
       })
+  // 모달창 닫음
+  const closeModal = document.getElementById("close-modal")
+  closeModal.addEventListener("click", e => {
+      modalOff()
+  })
+
+
+
 
 </script>
 </html>

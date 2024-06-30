@@ -1,0 +1,220 @@
+.detail-container {
+  width: 100%;
+}
+.detail-container > .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  /* padding: 0 16px; */
+  margin: 40px auto;
+  min-height: 800px;
+
+  & >div>h2+p{
+    margin: 0px 0px 24px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgb(242, 242, 242);
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.certifyForm{
+  display: flex;
+}
+
+/* 프로필사진 변경 관련 */
+.file-upload{
+  margin-top: 10px;
+}
+#customButton {
+  border: 1px solid #68696b;
+  color: #007bff;
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* 파일추가안보임 */
+.file-upload input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.marginR-40{
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .sub-container{
+  margin-top: 20px;
+  padding: 40px 40px 20px 40px;
+  border: 1px solid rgb(228, 229, 237);
+  border-radius: 10px;
+  display: flex;
+  min-width: 800px;
+}
+.sub-container .underline{
+  width: 600px;
+  border-bottom: .0625rem solid;
+  border-color: #f2f2f2;
+  margin-bottom: 0.7rem;
+}
+.sub-container .underline p, #certify div{
+  margin: 10px 0 8px 0;
+}
+.fontSize15{
+  font-size: 15px;
+  font-weight: 700;
+}
+.imgSize{
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(228, 229, 237);
+  border-radius: 5px;
+}
+
+
+/* 폼의 input박스효과 */
+.form-control{
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #616161;
+  font-weight: 400;
+  width: 100%;
+  height: inherit;
+  padding: 8px 10px;
+  letter-spacing:2px;
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #3ba3c7;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.label{
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.col{
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+#certify .col p{
+  margin: 5px 0 8px 0;
+  font-size: 13px;
+  color: rgba(33, 37, 41, 0.75);
+  font-weight: bold;
+}
+
+/* select, option디자인 관련 */
+
+.select-row{
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+}
+.form-select{
+  display: block;
+  width: 98%;
+  padding: .375rem 2.25rem .375rem .75rem;
+  font-size: 1rem;
+  border-color: #e0e0e0;
+  border-radius: 0.375em;
+  appearance: none;
+  background:url('/static/img/arrow.svg') no-repeat 97% 50%/15px auto;
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #3ba3c7;
+  }
+  &:focus{
+    outline: none;
+  }
+
+}
+.width50{
+  flex: 0 0 auto;
+  width: 50%;
+  margin: 0 0 17px 0 !important;
+  &>.form-control{
+    width: 98%;
+    margin-bottom: 10px;
+  }
+}
+
+.height200{
+  width: 100%;
+  margin-bottom: 20px; 
+  /* textarea와 버튼 사이의 간격 */
+  height: 200px; 
+  overflow:hidden;
+}
+.textarea{
+  overflow: auto;
+  outline: none;
+  width: 100%;
+  height: 85%;
+  border-color: #e0e0e0;
+  border-radius: 0.375em;
+  display: block;
+  cursor: text;
+  color: #303441;
+  padding: 14px;
+  font-size: 13px;
+  resize: none;
+  letter-spacing:1px;  
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #3ba3c7;
+  }
+  &:focus{
+    outline: none;
+  }
+  
+}
+
+/* 버튼 왼쪽하단위치 */
+.left{
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0 0 0 !important;
+
+}
+/* 수정완료 버튼 디자인 */
+.left >button{
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 4px;
+  padding: 11px 5px;
+  background-color: #2099bb;
+  color: #fff;
+  border: #2099bb;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight:500;
+  
+  &:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+}

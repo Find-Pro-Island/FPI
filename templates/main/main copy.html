@@ -3,11 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메인페이지</title>
+  <title>메인페이지 slick테스트</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/static/css/main/main.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick 플러그인 스크립트 추가 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
+<style>
+  .slick-track{
+    width: 200px;
+    height: 400px;
+  }
+  .slider div img{
+    width: 100%;
+    height: 100%;
+
+  }
+  .post-slider{
+  width:70%;
+  margin:0px auto;
+  position:relative;
+}
+.post-slider .silder-title{
+  text-align:center;
+  margin:30px auto;
+}
+.post-slider .next{
+  position:absolute;
+  top:50%;
+  right:30px;
+  font-size:2em;
+  color:gray;
+  cursor: pointer;
+}
+.post-slider .prev{
+  position:absolute;
+  top:50%;
+  left:30px;
+  font-size:2em;
+  color:gray;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+
+  width:84%;
+  height:350px;
+  margin:0px auto;
+  overflow: hidden;
+  padding:10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post{
+  width: 200px;
+  height: 400px;
+  margin:0px 10px;
+  display:inline-block;
+  background:white;
+  border-radius: 5px;
+}
+.post-slider .post-wrapper .post .post-info{
+  font-size:15px;
+  height:30%;
+  padding-left:10px;
+}
+.post-slider .post-wrapper .post .slider-image{
+  width:100%;
+  height:175px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+</style>
+
+
 <body>
   <main>
     <div class="main">
@@ -151,8 +224,123 @@
         
       </div>
 
+
+
+      
+
       
     </div>
   </main>
+    <div class="page-wrapper" style="position:relative;">
+      <!--page slider -->
+      <div class="post-slider">
+        <h2>최근 올라온 견적요청</h2>
+        <i class="fas fa-chevron-left prev"></i>  
+        <i class="fas fa-chevron-right next"></i>   
+        <div class="post-wrapper">
+          <div class="post">
+            <img src="" class="slider-image">
+            <div class="post-info">
+              <h4><a href="#" class="post-subject">투룸 이사 도와주실 전문가분 구합니다 </a></h4>
+              <i class="far fa-user" style="height:10%;">이사</i>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/architecture.jpg" class="slider-image">
+            <div class="post-info">
+              <h4><a href="#"> 아기방 인테리어 조언해주실 전문가님 구해요 </a></h4>
+              <i class="far fa-user" style="height:10%;">인테리어</i>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/paris.jpg" class="slider-image">
+            <div class="post-info">
+              <h4><a href="#">빠른 시일내에 입주청소가능한 업체구해요 </a></h4>
+              <i class="far fa-user" style="height:10%;">청소</i>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/gyungju.jpg" class="slider-image">
+            <div class="post-info">
+              <h4><a href="#">성인 피아노배우고 싶습니다.</a></h4>
+              <i class="far fa-user" style="height:10%;">취미</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--post slider-->
+  </div>
+  <div class="post-slider">
+    <h2>최근 커뮤니티글</h2>
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">카테고리주제 표시 또는  글 제목 </h5>
+            <p class="card-text">커뮤니티글 제목</p>
+            <a href="#" class="btn btn-light" >보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">카테고리주제 표시 또는  글 제목 </h5>
+            <p class="card-text">커뮤니티글 제목</p>
+            <a href="#" class="btn btn-light" >보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">카테고리주제 표시 또는  글 제목 </h5>
+            <p class="card-text">커뮤니티글 제목</p>
+            <a href="#" class="btn btn-light" >보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">카테고리주제 표시 또는  글 제목 </h5>
+            <p class="card-text">커뮤니티글 제목</p>
+            <a href="#" class="btn btn-light" >보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+      // 옵션 설정
+      autoplay: true,         // 자동 재생 설정 (true or false)
+      arrows: true,           // 이전/다음 버튼 보이기 설정 (true or false)
+      infinite: true,         // 무한 롤링 설정 (true or false)
+      speed: 500,             // 슬라이드 전환 속도 (밀리초 단위)
+      slidesToShow: 2,        // 한 화면에 보여줄 슬라이드 개수
+      slidesToScroll: 1,       // 한 번에 넘길 슬라이드 개수
+      nextArrow:$('.next'),
+      prevArrow:$('.prev'),
+    });
+
+    $('.post-wrapper').slick({
+      autoplay: true,         // 자동 재생 설정 (true or false)
+        arrows: true,           // 이전/다음 버튼 보이기 설정 (true or false)
+        infinite: true,         // 무한 롤링 설정 (true or false)
+        speed: 500,             // 슬라이드 전환 속도 (밀리초 단위)
+        slidesToShow: 2,        // 한 화면에 보여줄 슬라이드 개수
+        slidesToScroll: 1,       // 한 번에 넘길 슬라이드 개수
+        nextArrow:$('.next'),
+        prevArrow:$('.prev'),
+});
+  });
+</script>
+
+
 </html>
