@@ -1,0 +1,16 @@
+.post-slider .next{
+  position:absolute;
+  top:50%;
+  right:30px;
+  font-size:2em;
+  color:gray;
+  cursor: pointer;
+}
+.post-slider .prev{
+  position:absolute;
+  top:50%;
+  left:30px;
+  font-size:2em;
+  color:gray;
+    cursor: pointer;
+}

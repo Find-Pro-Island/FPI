@@ -1,0 +1,87 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick 플러그인 스크립트 추가 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+
+</head>
+  <body>
+    <div class="post-slider">
+      <h1 class="silder-title"></h1>
+      <i class="prev">전</i> 
+      <i class=" next">후</i> 
+
+    <div class="slider">
+      <div><img src="https://static.cdn.soomgo.com/upload/service/71c1ef33-506c-44de-9663-04cbf241fddd.png?h=302&w=452&webp=1" alt="Image 1"></div>
+      <div><img src="image2.jpg" alt="Image 2"></div>
+      <div><img src="https://static.cdn.soomgo.com/upload/service/71c1ef33-506c-44de-9663-04cbf241fddd.png?h=302&w=452&webp=1" alt="Image 3"></div>
+      <div><img src="image3.jpg" alt="Image 4"></div>
+      <div><img src="image3.jpg" alt="Image 5"></div>
+      <!-- 추가 이미지들을 원하는 만큼 추가 -->
+    </div>
+
+
+
+
+    <html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 수정</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="info-container">
+        <h1>정보 수정</h1>
+        <form action="submit-info.html" method="post">
+            <div class="form-item">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" value="홍길동">
+            </div>
+            <div class="form-item">
+                <label for="phone">연락처:</label>
+                <input type="text" id="phone" name="phone" value="010-1234-5678">
+            </div>
+            <div class="form-item">
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" value="example@example.com">
+            </div>
+            <div class="form-item">
+                <label for="region">지역:</label>
+                <input type="text" id="region" name="region" value="서울특별시">
+            </div>
+            <div class="form-item">
+                <label for="services">관심 서비스:</label>
+                <input type="text" id="services" name="services" value="여행, 음식, 영화">
+            </div>
+            <button type="submit">저장하기</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        // 옵션 설정
+        autoplay: true,         // 자동 재생 설정 (true or false)
+        arrows: true,           // 이전/다음 버튼 보이기 설정 (true or false)
+        infinite: true,         // 무한 롤링 설정 (true or false)
+        speed: 500,             // 슬라이드 전환 속도 (밀리초 단위)
+        slidesToShow: 2,        // 한 화면에 보여줄 슬라이드 개수
+        slidesToScroll: 1,       // 한 번에 넘길 슬라이드 개수
+        nextArrow:$('.next'),
+        prevArrow:$('.prev'),
+      });
+    });
+  </script>
+
+
+</html>
+			
