@@ -6,10 +6,11 @@
   <title>전문가정보 수정하기</title>
   <link rel="stylesheet" href="/static/css/pro/pro_edit.css">
   <link rel="stylesheet" href="/static/css/pro/pro_withdrawmodal.css">
+  <link rel="stylesheet" href="/static/css/user/certify.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
 </head>
 <body>
-  <div class="detail-container">
+  <div class="pro-detail-container">
     <div class="container">
       <!-- 좌측 메뉴 -->
       <div class="aside">
@@ -22,15 +23,15 @@
 
       <!-- 우측 정보수정 -->
 
-      <div class="marginL-40">
+      <div class="pro-marginL-40">
         <h2>내 정보 수정</h2>
         <p>연락처는 매칭시 회원에게 공개 됩니다.</p>
         <div class="sub-container">
-          <div class="marginR-40">
+          <div class="pro-marginR-40">
             <img  class="imgSize" ><!-- src"" = 기존 프로필이미지링크넣어야함 -->
             
             <!-- 프로필사진 변경버튼 -->
-            <div class="file-upload">
+            <div class="pro-file-upload">
               <button id="customButton">프로필 사진 변경</button>
               <input type="file" id="fileInput" accept="image/*">
             </div>
@@ -48,7 +49,7 @@
               <div class="col underline">
                 <label for="phonenumber" class="fontSize15 label">연락처</label>
                 <input type="text" id="phonenumber" name="phoneNumber" class="form-control">
-                <p>* 전문가와 매칭시 연락할 전화번호를 입력해주세요</p>
+                <p>* 회원과 매칭시 연락할 전화번호를 입력해주세요</p>
               </div>
   
               <div class="col underline">
@@ -96,9 +97,34 @@
                 </select> 
               </div>
 
-              <!-- 자격증 사진 첨부 -->
-              <!--자격증 발급 기관과 번호작성  -->
-              <!-- 경력/수상내역작성 -->
+              <div class="col underline">
+                <label for="upload" class="fontSize15 label">자격증 사진첨부</label>
+                <input type="file" class="form-control" id="upload" name="files" multiple>
+              </div>
+
+              <div class="select-row underline">
+                <div class="width50" >
+                  <label for="certification-agency" class="fontSize15 label">자격증 발급 기관</label>
+                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
+                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
+                  
+                </div>
+
+                <div class="width50">
+                  <label for="certification-num" class="fontSize15 label">자격증 발급 번호</label>
+                  <input type="text" id="certification-num" name="certification-num" class="form-control">
+                  <input type="text" id="certification-num" name="certification-num" class="form-control">
+                </div>
+              </div>
+          
+          
+              <div class="height200">
+                <span for="career" class="fontSize15 label">경력 혹은 수상내역 작성</span>
+                <textarea maxlength="400" class="textarea"></textarea>
+                
+              </div>
+
+
 
 
 

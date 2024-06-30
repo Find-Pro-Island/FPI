@@ -50,11 +50,11 @@
 }
 /* 파일추가안보임 */
 .file-upload input[type="file"] {
-  /* font-size: 100px; */
-  /* position: absolute;
+  font-size: 100px;
+  position: absolute;
   left: 0;
   top: 0;
-  opacity: 0; */
+  opacity: 0;
 }
 
 .marginL-40{

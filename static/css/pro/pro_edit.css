@@ -8,10 +8,10 @@
   vertical-align: middle;
   user-select: none;
 }
-.detail-container {
+.pro-detail-container {
   width: 100%;
 }
-.detail-container > .container{
+.pro-detail-container > .container{
   display: flex;
   width: 1200px;
   padding: 0 16px;
@@ -36,7 +36,7 @@
     font-weight: 700;}
 }
 /* 프로필사진 변경 관련 */
-.file-upload{
+.pro-file-upload{
   margin-top: 10px;
 }
 #customButton {
@@ -49,7 +49,7 @@
   font-size: 16px;
 }
 /* 파일경로 숨김 */
-.file-upload input[type="file"] {
+.pro-file-upload input[type="file"] {
   /* font-size: 100px; */
   position: absolute;
   left: 0;
@@ -59,12 +59,10 @@
 
 
 
-
-
-.marginL-40{
+.pro-marginL-40{
   margin-left: 40px;
 }
-.marginL-40 >p {
+.pro-marginL-40 >p {
   margin: 0px 0px 24px;
   padding: 12px;
   border-radius: 8px;
@@ -75,7 +73,7 @@
 }
 
 
-.marginR-40{
+.pro-marginR-40{
   margin-right: 40px;
 }
 
