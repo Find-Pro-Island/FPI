@@ -449,15 +449,17 @@ ul, li {
     cursor: pointer;
     font-weight: 500px;
     color: #fff;
-    background-color: #00c7ae;
+    background-color: #8da4d0;
     text-align: center;
     vertical-align: center;
     padding: 11px 12px;
     text-decoration: none;
     border-radius: 4px;
+    border: 1px solid #7a8eb5;
 }
 
 .btn-cancle{
-    background-color: #f2f2f2 !important;
+    background-color: #F8CACC !important;
+    border: 1px solid #d0aaac !important;
     color: #323232 !important;
 }
