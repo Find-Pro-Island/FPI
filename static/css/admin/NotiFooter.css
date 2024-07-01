@@ -1,0 +1,27 @@
+.container-divider{
+    border-top: 1px solid #ddd;
+}
+
+.container-blank{
+    margin-bottom: 10px;
+}
+
+.Footer {
+    background-color: #FFFFFF;
+    color: white;
+    padding: 10px 0;
+    text-align: end;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.Footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.Footer a:hover {
+    text-decoration: underline;
+}
+
