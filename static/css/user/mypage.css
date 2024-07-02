@@ -55,6 +55,7 @@ h1{
     background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxIDVhMSAxIDAgMDExIDF2My4xNWExIDEgMCAwMS0uMjIuNjI0bC0uNzguOTc2YTIuMDAxIDIuMDAxIDAgMDAwIDIuNWwuNzguOTc2YTEgMSAwIDAxLjIyLjYyNVYxOGExIDEgMCAwMS0xIDFIM2ExIDEgMCAwMS0xLTF2LTMuMTVhMSAxIDAgMDEuMjItLjYyNEwzIDEzLjI1YTIgMiAwIDAwMC0yLjVsLS43OC0uOTc2QTEgMSAwIDAxMiA5LjE0OVY2YTEgMSAwIDAxMS0xaDE4em0tNi43NSA4YTEuMjUgMS4yNSAwIDEwMCAyLjUgMS4yNSAxLjI1IDAgMDAwLTIuNXptMS4xMjYtMy44OTNhLjc1Ljc1IDAgMDAtMS4wNTYtLjA5MmwtNS43NDUgNC44MmEuNzUuNzUgMCAxMC45NjQgMS4xNWw1Ljc0NS00LjgyYS43NS43NSAwIDAwLjA5Mi0xLjA1OHpNOS41NSA4LjVhMS4yNSAxLjI1IDAgMTAwIDIuNSAxLjI1IDEuMjUgMCAwMDAtMi41eiIgZmlsbD0iIzMyMzIzMiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) 50% no-repeat;} 
 
 }
+
 .user-name{
   align-items: center;
   font-size: 1.3rem;
@@ -72,11 +73,12 @@ h1{
 /* 글씨간의 여백 */
 .padding08{
   padding: 0 0.8rem 0 0;
-
 }
+
 .padding3{
   padding: 3rem 0 0 0;
 }
+
 
 /* span한줄 정렬 */
 .oneline{
@@ -99,7 +101,10 @@ h1{
   font-weight: 500;
   margin-right: .25rem;
 }
-
+.procircle{
+  background-color: #F8CACC;
+  color: #000000;
+}
 .circle span{
   font-size:1rem;
 }
