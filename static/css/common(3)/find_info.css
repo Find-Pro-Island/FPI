@@ -439,6 +439,8 @@ ul, li {
     color: #323232;
     margin-bottom: 16px;
     word-break: break-word;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .accept-cancle-btn{
