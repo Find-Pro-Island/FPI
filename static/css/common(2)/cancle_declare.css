@@ -14,6 +14,7 @@
     line-height: 26px;
     font-weight: 400;
     text-decoration: none;
+    border-radius: 8px;
   }
 
 .cancle-declare-btn{
@@ -38,6 +39,7 @@
     background: rgb(251, 251, 251);      
     width: 400px;
     position: relative; 
+    border-radius: 8px;
 }
 .title{
     display: flex !important;
@@ -74,6 +76,28 @@
     color: rgb(0, 0, 0);
 }
 
+.check-text{
+    margin-right: 5px;
+}
+
 .check-text > textarea {
-    width: 100%;;
+    overflow: auto;
+    outline: none;
+    width: 100%;
+    height: 85%;
+    border-color: #e0e0e0;
+    border-radius: 0.375em;
+    display: block;
+    cursor: text;
+    color: #303441;
+    font-size: 13px;
+    resize: none;
+    letter-spacing:1px;  
+    &:hover,&:focus{
+        position: inherit;
+        border-color: #3ba3c7;
+    }
+    &:focus{
+        outline: none;
+    }
 }
