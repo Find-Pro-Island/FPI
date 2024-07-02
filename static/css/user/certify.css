@@ -1,7 +1,7 @@
 .detail-container {
   width: 100%;
 }
-.detail-container > .container{
+.detail-container > .certify-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,12 +31,15 @@
 }
 #customButton {
   border: 1px solid #68696b;
-  color: #007bff;
+  color:#7a8eb5;
   background-color: white;
   padding: 8px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  &:hover{
+    font-weight: 700;
+  }
 }
 /* 파일추가안보임 */
 .file-upload input[type="file"] {
@@ -98,7 +101,7 @@
   letter-spacing:2px;
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color: #93A9D1;
   }
   &:focus{
     outline: none;
@@ -140,7 +143,7 @@
   background:url('/static/img/arrow.svg') no-repeat 97% 50%/15px auto;
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color: #93A9D1;
   }
   &:focus{
     outline: none;
@@ -180,7 +183,7 @@
   letter-spacing:1px;  
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color: #93A9D1;
   }
   &:focus{
     outline: none;
@@ -206,9 +209,9 @@
   user-select: none;
   border-radius: 4px;
   padding: 11px 5px;
-  background-color: #2099bb;
+  background-color: #93A9D1;
   color: #fff;
-  border: #2099bb;
+  border:1px solid #7a8eb5;
   font-size: 16px;
   line-height: 26px;
   font-weight:500;

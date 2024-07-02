@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전문가 정보 상세보기</title>
-  <link rel="stylesheet" href="/static/css/pro/pro_detail.css">
-  <link rel="stylesheet" href="/static/css/pro/pro_withdrawmodal.css">
+  <link rel="stylesheet" href="/static/css/user/detail.css">
+  <link rel="stylesheet" href="/static/css/user/withdrawmodal.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
         <div class="sub-container">
           <!-- 프로필사진 -->
           <div class="marginR-40">
-            <img  class="imgSize" ><!-- src"" = 프로필이미지링크넣어야함 -->
+            <img src="" class="imgSize" ><!-- src"" = 프로필이미지링크넣어야함 -->
           </div>
           <div>
             <div class="underline">
@@ -68,7 +68,6 @@
   </div>
   </div>
 
-  <!-- 전문가 탈퇴모달 -->
   <div id=modal class="container">
     <div class="container">
       <div class="box-container">
@@ -85,17 +84,18 @@
           </div>
           <form action="#">
             <div class="title">탈퇴하시려면 전문가 활동 이름을 작성해주세요</div>
-            <input class="input-box" name="text" placeholder="전문가 활동 이름 작성" type="text">
+            <input class="pro-input-box input-box" name="text" placeholder="전문가 활동 이름 작성" type="text">
 
 
-          <!--모달 창 닫음 -->
-          <button type="button" id="close-modal"  class="btn">탈퇴하지 않겠습니다</button>
-          <!-- 탈퇴완료창->로그아웃&메인페이지로이동 -->
-          <a href="#" class="btn">탈퇴하기</a>
+            <!--모달 창 닫음 -->
+            <button type="button" id="close-modal"  class=" pro-btn btn">탈퇴하지 않겠습니다</button>
+            <!-- 탈퇴완료창->로그아웃&메인페이지로이동 -->
+            <a href="#" class="btn pro-btn">탈퇴하기</a>
           </form>
         </div> 
       </div>
     </div>
+  </div>
   
 </body>
 

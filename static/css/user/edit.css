@@ -8,10 +8,10 @@
   vertical-align: middle;
   user-select: none;
 }
-.pro-detail-container {
+.detail-container {
   width: 100%;
 }
-.pro-detail-container > .container{
+.detail-container > .container{
   display: flex;
   width: 1200px;
   padding: 0 16px;
@@ -36,20 +36,30 @@
     font-weight: 700;}
 }
 /* 프로필사진 변경 관련 */
-.pro-file-upload{
+.file-upload{
   margin-top: 10px;
 }
 #customButton {
   border: 1px solid #68696b;
-  color: #007bff;
+  color: #8da4d0;
   background-color: white;
   padding: 8px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
 }
+#pro-customButton {
+  background-color: #F8CACC;
+  border: 1px solid #d0aaac;
+  color: #806869;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 /* 파일경로 숨김 */
-.pro-file-upload input[type="file"] {
+.file-upload input[type="file"] {
   /* font-size: 100px; */
   position: absolute;
   left: 0;
@@ -57,12 +67,10 @@
   opacity: 0;
 }
 
-
-
-.pro-marginL-40{
+.marginL-40{
   margin-left: 40px;
 }
-.pro-marginL-40 >p {
+.marginL-40 >p {
   margin: 0px 0px 24px;
   padding: 12px;
   border-radius: 8px;
@@ -73,7 +81,7 @@
 }
 
 
-.pro-marginR-40{
+.marginR-40{
   margin-right: 40px;
 }
 
@@ -101,7 +109,7 @@
   border-color: #f2f2f2;
   margin-bottom: 0.7rem;
 }
-.sub-container .underline p, #user-edit div{
+.sub-container .underline p, #user-edit div,#pro-edit div{
   margin: 10px 0 8px 0;
 }
 .fontSize15{
@@ -140,12 +148,35 @@
   letter-spacing:5px;
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color: #8da4d0;
   }
   &:focus{
     outline: none;
   }
 }
+
+#pro-edit .form-control{
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #616161;
+  font-weight: 400;
+  width: 100%;
+  height: inherit;
+  padding: 8px 10px;
+  letter-spacing:5px;
+  &:hover,&:focus{
+    position: inherit;
+    border-color:  #F8CACC;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+
 
 .label{
   display: inline-block;
@@ -157,7 +188,7 @@
   width: 100%;
   margin-bottom: 0.3rem;
 }
-#user-edit .col p{
+#user-edit .col p,#pro-edit .col p{
   margin: 5px 0 8px 0;
   font-size: 13px;
   color: rgba(33, 37, 41, 0.75);
@@ -186,18 +217,43 @@ input:read-only{
   background:url('/static/img/arrow.svg') no-repeat 97% 50%/15px auto;
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color: #8da4d0;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+#pro-edit .form-select{
+  display: block;
+  width: 98%;
+  padding: .375rem 2.25rem .375rem .75rem;
+  font-size: 1rem;
+  border-color: #e0e0e0;
+  border-radius: 0.375em;
+  appearance: none;
+  background:url('/static/img/arrow.svg') no-repeat 97% 50%/15px auto;
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #F8CACC;
   }
   &:focus{
     outline: none;
   }
 
-}
+  }
+
 .width50{
   flex: 0 0 auto;
   width: 50%;
   margin: 0 0 17px 0 !important;
 }
+
+.height200 textarea{
+  &:hover {
+    border-color: #F8CACC
+  }
+}
+
 
 /* 버튼 왼쪽하단위치 */
 .left{
@@ -216,14 +272,37 @@ input:read-only{
   user-select: none;
   border-radius: 4px;
   padding: 11px 5px;
-  background-color: #2099bb;
+  background-color: #8da4d0;
   color: #fff;
-  border: #2099bb;
+  border: #8da4d0;
   font-size: 16px;
   line-height: 26px;
   font-weight:500;
   &:hover{
     color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+}
+
+/* 수정완료 버튼 디자인 */
+.left >.probtn{
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 4px;
+  padding: 11px 5px;
+  background-color: #F8CACC;
+  color: #806869;
+  border: 1px solid #d0aaac;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight:500;
+  &:hover{
+    color: rgb(0, 0, 0);
     font-weight: 700;
   }
 }

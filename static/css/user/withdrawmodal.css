@@ -7,8 +7,8 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(71, 58, 58, 0.25);     
-  letter-spacing:3px;
+  background: rgba(71, 58, 58, 0.25);   
+  letter-spacing:3px;  
 }
 .box-container{
   width: 520px;
@@ -47,16 +47,31 @@
   line-height: 24px;
   color: #616161;
   font-weight: 400;
-  background: #fff;
+  background: transparent;
   width: 100%;
   height: inherit;
   padding: 8px 10px;
+  letter-spacing:5px;
   &:hover,&:focus{
     position: inherit;
-    border-color: #3ba3c7;
+    border-color:#93A9D1;
+  }
+  &:focus{
+    outline: none;
   }
 
 }
+
+.pro-input-box{
+
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #F8CACC;
+    outline: none;
+  }
+
+}
+
 .btn{
   cursor: pointer;
   display: inline-block;
@@ -67,11 +82,26 @@
   border-radius: 4px;
   padding: 11px 0px;
   margin-top: 24px;
-  background-color: #2099bb;
+  background-color:#93A9D1;
   color: #fff;
-  border: #2099bb;
+  border: 1px solid #7a8eb5;
   width: 100%;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  &:hover,&:focus{
+    position: inherit;
+    font-weight: bolder;
+  }
+}
+.pro-btn{
+  background-color:#F8CACC;
+  color: #020202;
+  border: 1.3px solid #F8CACC;
+  &:hover,&:focus{
+    position: inherit;
+    border-color: #F8CACC;
+    border: 1.3px solid #d0aaac;
+  }
+
 }
