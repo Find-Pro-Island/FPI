@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>requests</title>
-    <link rel="stylesheet" href="/static/css/common(2)/received_req_info.css">
-    <link rel="stylesheet" href="/static/css/common(2)/cancle_declare.css">
+    <link rel="stylesheet" href="/static/css/common(3)/find_info.css">
     <style>
         .hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
     </style>
@@ -181,75 +180,16 @@
             <div class="request-price-side">
                 <div class="side-wrapper">
                     <div class="request-price">
-                        <span>10000</span>
-                        <span>원에 요청을 보내주셨습니다. 수락하시겠습니까?</span>
-
-                        <!-- 작업이 완료 되면 띄우도록 -->
-                        <!-- <span>작업이 완료 되었습니다!</span> -->
+                        <span>10000원</span>
+                        <span>~</span>
+                        <span>30000원</span>
                     </div>
                     <div class="accept-cancle-btn">
-                        <!-- <button type="button" class="btn-accept">수락하기</button>
-                        <button type="button" class="btn-cancle">거절하기</button>  -->
-                        <!-- 거절하기 누르면 삭제하도록 delete만들기!! -->
-
-                        <!--  작업 완료를 눌렀다면 밑에 두개가 뜨도록 -->
-                        <button type="button" class="btn-accept">작업 완료</button>
-                        <button type="button" id="btn-modal"  class="btn-cancle">취소 또는 신고</button>
-
-                        <!-- 작업 완료를 누르면 리뷰 작성하기 띄우기-->
-                        <!-- <button type="button" class="btn-accept">리뷰 작성하기</button>  -->
-
-                        <!-- 취소 또는 신고를 누르면 모달로 -->
-
-
+                        <button type="button" class="btn-accept">요청하기</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div id="modal" class="modal-overlay">
-        <div class="modal-window">
-            <div class="title">
-                <h2>취소하기 또는 신고하기</h2>
-                <div id="close-area" class="close-area">X</div>
-            </div>
-            <div class="content">
-                <form id="cancle-form" action="#">
-                    <div class="check-text">
-                        <textarea class="form-control"rows="9"
-                                  placeholder="취소또는 신고 사유"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="cancle-declare-btn">
-                <a href="#"  class="btn cancle-btn">취소하기</a>
-                <a href="#" class="btn declar-btn">신고하기</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        const modal=document.getElementById("modal")
-        function modalOn(){
-            modal.style.display="flex"
-
-        }
-        function isModalOn(){
-            return modal.style.display === "flex"
-        }
-        function modalOff() {
-            modal.style.display = "none"
-        }
-        const btnModal = document.getElementById("btn-modal")
-        const btnModalClose = document.getElementById("close-area")
-        btnModal.addEventListener("click", e => {
-                modalOn()
-            })
-        btnModalClose.addEventListener("click", e => {
-            modalOff()
-        })
-
-    </script>
 </body>
 </html>
