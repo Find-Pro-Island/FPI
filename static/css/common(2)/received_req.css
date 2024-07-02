@@ -1,9 +1,12 @@
+body{
+    margin: 0;
+}
 .container{
     padding: 0 20px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .page-h1{
@@ -16,7 +19,8 @@
     line-height: 1.4;
 }
 
-/* 보낸 요청이나 받은게 없으면 flex로하고 none 은 주석 그리고 밑에 yes-req도 none으로*/
+
+/* 보낸 요청이나 받은게 없으면 flex로하고 none 은 주석 그리고 밑에 grid-container도 none으로*/
 .no-req{
     /* display: flex; */
     display: none;
@@ -67,12 +71,10 @@
     margin: auto;
 }
 
-.yes-req{
-    /* display: none; */
-}
 
 .grid-container{
     display: grid;
+    /* display: none; */
     grid-template-columns: repeat(3,1fr);
 }
 
