@@ -8,104 +8,73 @@
 <body>
 <div class="main">
     <div class="main-container">
-        <div class="main-container-title">
-            <div class="main-container-title-container">
-                <h2 class="title">
-                    <span class="title-content">
-                        공지사항
-                    </span>
-                </h2>
+        <div class="write-box">
+            <div class="title-info">
+                제목 :
             </div>
+            <label class="title-input">
+                <input type="text">
+            </label>
         </div>
-        <div class="main-container-list">
-            <table class="list-container">
-                <thead>
-                    <tr>
-                        <th style="width: 9%">번호</th>
-                        <th style="width: 80%">제목</th>
-                        <th style="width: 11%">등록일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="list-num">1</td>
-                        <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                        <td class="list-date">01-01</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">2</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">3</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">4</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">5</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">6</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">7</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td class="list-num">8</td>
-                    <td class="list-title"><a href="#">샘플용 제목입니다.</a></td>
-                    <td class="list-date">01-01</td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="write-box">
-                <a href="#">글쓰기</a>
-            </div>
-            <ul class="list-number">
-                <li class="page-item">
-                    <a class="page-link" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link">1</a>
-                    <a class="page-link">2</a>
-                    <a class="page-link">3</a>
-                    <a class="page-link">4</a>
-                    <a class="page-link">5</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="write-box">
+            <label class="service-area">
+                <select class="service-part">
+                    <option>
+                        서비스 선택
+                    </option>
+                    <option>
+                        이사/청소
+                    </option>
+                    <option>
+                        설치/수리
+                    </option>
+                    <option>
+                        인테리어
+                    </option>
+                    <option>
+                        취미/자기개발
+                    </option>
+                    <option>
+                        기타
+                    </option>
+                </select>
+            </label>
+            <label class="service-area">
+                <select class="service-part">
+                    <option>
+                        지역
+                    </option>
+                    <option>
+                        서울
+                    </option>
+                    <option>
+                        대전
+                    </option>
+                    <option>
+                        대구
+                    </option>
+                    <option>
+                        부산
+                    </option>
+                    <option>
+                        인천
+                    </option>
+                    <option>
+                        기타
+                    </option>
+                </select>
+            </label>
+        </div>
+        <div class="content">
+            <textarea class="content-text"></textarea>
+        </div>
+        <div class="content-footer">
+            <button>
+                이미지 첨부
+            </button>
+            <button>
+                작성 완료
+            </button>
         </div>
     </div>
 </div>
