@@ -1,0 +1,155 @@
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/*  ------------------------------------------------------------------------------------------------  */
+.main{
+    padding: 0 0 20px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.article{
+    grid-column: 2 / span 3;
+    width: 100%;
+}
+
+.article-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.article-title h3{
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.article-title div{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: right;
+    font-size: 13px;
+}
+
+.article-date{
+    width: 40%;
+    text-align: right;
+    font-size: 13px;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.article-content{
+    margin: 0 auto 100px;
+    width: calc(100% - 59px);
+}
+
+.like-comment-icon{
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.like-icon{
+    cursor: pointer;
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    padding: 1.0625rem 0;
+    margin-right: 1.75rem;
+    font-size: .875rem;
+    font-weight: 500;
+    color: #6a7685;
+}
+
+.comment-icon{
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    padding: 1.0625rem 0;
+    margin-right: 1.75rem;
+    font-size: .875rem;
+    font-weight: 500;
+    color: #6a7685;
+}
+
+.star-icon{
+    display: flex;
+}
+
+.star-icon svg{
+    margin-right: .5rem;
+}
+
+.star-icon div{
+    font-size: .875rem;
+    font-weight: 500;
+    color: #6a7685;
+}
+
+.comment-container{
+    position: relative;
+    width: 100%;
+    margin-bottom: 12.5rem;
+}
+
+.comment-box{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-left:20px;
+    padding: 1.0625rem .875rem;
+    background-color: #fff;
+    border: .0625rem solid #f2f2f2;
+    border-radius: 8px;
+}
+
+.comment-box textarea{
+    width: 100%;
+    min-height: 1.375rem;
+    padding: 0;
+    font-size: .875rem;
+    color: #2d2d2d;
+    resize: none;
+    border: 0;
+    height: 0;
+    outline: none;
+}
+
+
+.article-bottom-menu{
+    text-align: center;
+}
+
+.article-bottom-menu a{
+    padding: 0 25px;
+    background: #444;
+    border: 1px solid #303030;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    line-height: 30px;
+
+}
