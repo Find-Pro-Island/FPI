@@ -437,6 +437,7 @@ ul, li {
     line-height: 1.63;
     letter-spacing: -.3px;
     color: #323232;
+    margin-top: 10px;
     margin-bottom: 16px;
     word-break: break-word;
     display: flex;
