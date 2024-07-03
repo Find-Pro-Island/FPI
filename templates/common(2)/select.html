@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.dropdown{
+  position : relative;
+  display : inline-block;
+}
+
+.dropbtn{
+  display : block;
+  border : 2px solid rgb(94, 94, 94);
+  border-radius : 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color : rgb(124, 124, 124);
+  padding : 12px;
+  width :240px;
+  text-align: left;
+  cursor : pointer;
+  font-size : 12px;
+  z-index :1;
+  position : relative;
+}
+.dropdown-content{
+  display : none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width : 240px;
+  border-radius: 8px;
+  height : 200px;
+  overflow : scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+.dropdown-content::-webkit-scrollbar{
+  width : 5px;
+  height : 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb{
+  border-radius : 2px;
+  background-color :rgb(194, 194, 194)
+}
+
+.dropdown-content > .category{
+  text-decoration : none;
+  color : rgb(37, 37, 37);
+  font-size: 12px;
+  padding : 12px 20px;
+}
+.dropdown-content > .category:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show{
+  display : block;
+}
+
+.dropdown-service{
+  display : none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width : 240px;
+  border-radius: 8px;
+  overflow : scroll; 
+  padding: 0 0 0 15px !important;   
+}
+.dropdown-service::-webkit-scrollbar-thumb{
+  background-color :rgb(194, 194, 194)
+}
+
+.dropdown-service > div{
+  display : block;
+  text-decoration : none;
+  color : rgb(37, 37, 37);
+  font-size: 12px;
+  padding : 12px 20px;
+}
+.dropdown-service > div:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-service.show{
+  display : block;
+}
+    </style>
+</head>
+<body>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span class="dropbtn_content">서비스</span>
+          <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+            onclick="dropdown()">arrow_drop_down</span>
+        </button>
+        <div class="dropdown-content">
+          <div class="service1 category" >이사/청소</div>
+          <div class="dropdown-service1 dropdown-service">
+              <div class="services" onclick="showService(this.innerText)">이사</div>
+              <div class="services" onclick="showService(this.innerText)">입주/집청소</div>
+              <div class="services" onclick="showService(this.innerText)">가구/가구청소</div>
+              <div class="services" onclick="showService(this.innerText)">특수 청소</div>
+              <div class="services" onclick="showService(this.innerText)">철거/폐기</div>
+          </div>
+          <div class="service2 category">설치/수리</div>
+          <div class="dropdown-service2 dropdown-service">
+            <div class="services" onclick="showService(this.innerText)">가전제품</div>
+            <div class="services" onclick="showService(this.innerText)">문/창문</div>
+            <div class="services" onclick="showService(this.innerText)">수도/보일러/전기</div>
+            <div class="services" onclick="showService(this.innerText)">가구</div>
+            <div class="services" onclick="showService(this.innerText)">기타 설치/수리</div>
+          </div>
+          <div class="service3 category">인테리어</div>
+          <div class="dropdown-service3 dropdown-service">
+            <div class="services" onclick="showService(this.innerText)">종합 인테리어</div>
+            <div class="services" onclick="showService(this.innerText)">부분 인테리어</div>
+            <div class="services" onclick="showService(this.innerText)">바닥 시공</div>
+            <div class="services" onclick="showService(this.innerText)">야외 시공</div>
+            <div class="services" onclick="showService(this.innerText)">기타 시공</div>
+          </div>
+          <div class="service4 category">취미/자기계발</div>
+          <div class="dropdown-service4 dropdown-service">
+            <div class="services" onclick="showService(this.innerText)">악기</div>
+            <div class="services" onclick="showService(this.innerText)">보컬</div>
+            <div class="services" onclick="showService(this.innerText)">피트니스</div>
+            <div class="services" onclick="showService(this.innerText)">스포츠</div>
+            <div class="services" onclick="showService(this.innerText)">댄스</div>
+            <div class="services" onclick="showService(this.innerText)">연기/마술</div>
+            <div class="services" onclick="showService(this.innerText)">미술</div>
+            <div class="services" onclick="showService(this.innerText)">사진/영상</div>
+            <div class="services" onclick="showService(this.innerText)">투자</div>
+            <div class="services" onclick="showService(this.innerText)">굥예</div>
+            <div class="services" onclick="showService(this.innerText)">요리/조리</div>
+            <div class="services" onclick="showService(this.innerText)">패션/미용</div>
+            <div class="services" onclick="showService(this.innerText)">취업 준비 컨설팅</div>
+            <div class="services" onclick="showService(this.innerText)">기타 취밈/자기계발</div>
+          </div>
+          <div class="service5 category">기타</div>
+          <div class="dropdown-service5 dropdown-service">
+            <div class="services" onclick="showService(this.innerText)">렌탈</div>
+            <div class="services" onclick="showService(this.innerText)">심리</div>
+            <div class="services" onclick="showService(this.innerText)">반려동물</div>
+            <div class="services" onclick="showService(this.innerText)">번역 작업</div>
+            <div class="services" onclick="showService(this.innerText)">여행</div>
+            <div class="services" onclick="showService(this.innerText)">심부름</div>
+            <div class="services" onclick="showService(this.innerText)">도우미</div>
+            <div class="services" onclick="showService(this.innerText)">알바</div>
+          </div>
+        </div>
+      </div>
+      <script>
+        let service1 = 0;
+        let service2 = 0;
+        let service3 = 0;
+        let service4 = 0;
+        let service5 = 0;
+        window.onload=()=>{
+      document.querySelector('.dropbtn_click').onclick = ()=>{
+        dropdown();
+      }
+    //   카테고리 1
+      document.querySelector('.service1').onclick = ()=>{
+        console.log('잘 눌림')
+        if(service1 == 0){
+            service1 = 1 ;
+            dropdown_service1();
+        }
+        else{
+            service1 = 0;
+            fold_service1();
+        }
+      }
+      dropdown_service1 = () => {
+        var f = document.querySelector('.dropdown-service1');
+        var v = document.querySelector('.dropdown-content');
+        v.classList.add('show');
+        f.classList.toggle('show');
+      }
+      fold_service1 = () => {
+        var f = document.querySelector('.dropdown-service1');
+        f.classList.remove('show')
+      }
+
+    //   카테고리 2
+      document.querySelector('.service2').onclick = ()=>{
+        console.log('잘 눌림')
+        if(service2 == 0){
+            service2 = 1 ;
+            dropdown_service2();
+        }
+        else{
+            service2 = 0;
+            fold_service2();
+        }
+      }
+      dropdown_service2 = () => {
+        var f = document.querySelector('.dropdown-service2');
+        var v = document.querySelector('.dropdown-content');
+        v.classList.add('show');
+        f.classList.toggle('show');
+      }
+      fold_service2 = () => {
+        var f = document.querySelector('.dropdown-service2');
+        f.classList.remove('show')
+      }
+
+      //   카테고리 3
+      document.querySelector('.service3').onclick = ()=>{
+        console.log('잘 눌림')
+        if(service3 == 0){
+            service3 = 1 ;
+            dropdown_service3();
+        }
+        else{
+            service3 = 0;
+            fold_service3();
+        }
+      }
+      dropdown_service3 = () => {
+        var f = document.querySelector('.dropdown-service3');
+        var v = document.querySelector('.dropdown-content');
+        v.classList.add('show');
+        f.classList.toggle('show');
+      }
+      fold_service3 = () => {
+        var f = document.querySelector('.dropdown-service3');
+        f.classList.remove('show')
+      }
+
+      //   카테고리 4
+      document.querySelector('.service4').onclick = ()=>{
+        console.log('잘 눌림')
+        if(service4 == 0){
+            service4= 1 ;
+            dropdown_service4();
+        }
+        else{
+            service4 = 0;
+            fold_service4();
+        }
+      }
+      dropdown_service4 = () => {
+        var f = document.querySelector('.dropdown-service4');
+        var v = document.querySelector('.dropdown-content');
+        v.classList.add('show');
+        f.classList.toggle('show');
+      }
+      fold_service4 = () => {
+        var f = document.querySelector('.dropdown-service4');
+        f.classList.remove('show')
+      }
+
+      //   카테고리 5
+      document.querySelector('.service5').onclick = ()=>{
+        console.log('잘 눌림')
+        if(service5 == 0){
+            service5 = 1 ;
+            dropdown_service5();
+        }
+        else{
+            service5 = 0;
+            fold_service5();
+        }
+      }
+      dropdown_service5 = () => {
+        var f = document.querySelector('.dropdown-service5');
+        var v = document.querySelector('.dropdown-content');
+        v.classList.add('show');
+        f.classList.toggle('show');
+      }
+      fold_service5 = () => {
+        var f = document.querySelector('.dropdown-service5');
+        f.classList.remove('show')
+      }
+
+      dropdown = () => {
+        var v = document.querySelector('.dropdown-content');
+        var dropbtn = document.querySelector('.dropbtn')
+        v.classList.toggle('show');
+        dropbtn.style.borderColor = 'rgb(94, 94, 94)';
+      }
+
+
+
+      showService=(value)=>{
+        var dropbtn_content = document.querySelector('.dropbtn_content');
+        var dropbtn_click = document.querySelector('.dropbtn_click');
+        var dropbtn = document.querySelector('.dropbtn');
+        var v = document.querySelector('.dropdown-content');
+
+        dropbtn_content.innerText = value;
+        dropbtn_content.style.color = '#252525';
+        dropbtn.style.borderColor = '#3992a8';
+        
+      }
+    }
+    window.onclick= (e)=>{
+      if(e.target.matches('.services')){
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+
+        var dropbtn_content = document.querySelector('.dropbtn_content');
+        var dropbtn_click = document.querySelector('.dropbtn_click');
+        var dropbtn = document.querySelector('.dropbtn');
+
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+      </script>
+</body>
+</html>
