@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>견적 요청 모달</title>
+  <title>서비스 제공 모달</title>
   <link rel="stylesheet" href="/static/css/user/withdrawmodal.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
   <link rel="stylesheet" href="/static/css/user/edit.css">
   <link rel="stylesheet" href="/static/css/common(2)/received_req_info.css">
   <link rel="stylesheet" href="/static/css/user/certify.css">
+  <link rel="stylesheet" href="/static/css/main/receiveform.css">
 
-  
+
 
 </head>
 <body>
@@ -18,7 +19,7 @@
   <div class="container">
     <div class="container">
       <div class="box-container">
-        <div class="box-header">견적 요청</div>
+        <div class="box-header">견적서</div>
         <div class="box-content">
           <div class="description">
             <div class="pro-name user-name">주현제</div>
@@ -27,19 +28,19 @@
               경북 포항시
           </div>
           </div>
-          <form action="#" name="user_receviemodal" method="post">
-            <div class="title">요청을 보내면 전문가가 수락시 연락처가 공개됩니다.</div>
+          <form action="#" name="pro_receviemodal" id="pro_receviemodal" class="pro" method="post">
+            <div class="title">견적을 보내면 회원이 수락시 연락처가 공개됩니다.</div>
             <div class="col underline">
-              <label for="price" class="fontSize15 label">요청 금액 (원)</label>
-              <input type="number" id="user_receive_modal" name="price_input" class="form-control" placeholder="정확한금액을 입력하세요">
+              <label for="price" class="fontSize15 label">견적 금액 (원)</label>
+              <input type="number" id="pro_receive_modal" name="price_input" class="form-control" placeholder="정확한금액을 입력하세요">
             </div>
             <div class="">
-              <textarea class="textarea" maxlength="65536" style="width:100%;height:300px" placeholder="요청내용을 구체적으로 적으실 수록 전문가의 수락률이 높습니다."></textarea>
+              <textarea class="textarea" maxlength="65536" style="width:100%;height:300px" placeholder="견적과 서비스에 대한 내용을 구체적으로 적으실 수록 회원의 수락률이 높습니다."></textarea>
             </div>
 
 
             <!--모달 창 닫음 -->
-            <button type="submit" id="close-modal"  class="btn">견적 요청 하기</button>
+            <button type="submit" id="close-modal"  class="btn">견적 보내기</button>
 
           </form>
         </div> 

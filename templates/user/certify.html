@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전문가 인증</title>
-  <link rel="stylesheet" href="/static/css/user/certify.css">
+
+  <link rel="stylesheet" href="/static/css/user/edit.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
+  <link rel="stylesheet" href="/static/css/user/certify.css">
+
+  
 </head>
 <body>
   <!--  자격증사진 자격증발급기관,자격증번호작성,경력 혹은 수상내역 작성 -->
@@ -20,11 +24,13 @@
             <div class="marginR-40">
               <img  class="imgSize" ><!-- src"" = 기존 프로필이미지링크넣어야함 -->
               <div class="file-upload">
-                <button id="customButton">전문가 활동 사진</button>
-                <input type="file" id="fileInput" accept="image/*">
+                <label for="fileInput">
+                  <div id="customButton" >전문가 활동 사진</div>
+                </label>
+                <input type="file"  id="fileInput" accept="image/*">
               </div>
             </div>
-            <div>
+            <div style="width: 100%;">
               <div class="col underline">
                 <label for="proname" class="fontSize15 label">전문가 활동 이름</label>
                 <input type="text" id="proname" name="proName" class="form-control">
@@ -58,9 +64,9 @@
                 </div>  
               </div>
     
-              <div class="col underline">
+              <div class="col underline2">
                 <label for="category" class="fontSize15 label">제공 서비스</label>
-                <select name="category" aria-required="false" class="form-select" style="margin-bottom: 17px;">
+                <select name="category" aria-required="false" class="form-select">
                   <option value="12">카테고리</option>
                   <option value="1">이사/청소</option>
                   <option value="2">설치/수리</option>
@@ -70,23 +76,28 @@
                 </select> 
               </div>
   
-              <div class="col underline">
+              <div class="col underline2">
                 <label for="upload" class="fontSize15 label">자격증 사진첨부</label>
                 <input type="file" class="form-control" id="upload" name="files" multiple>
               </div>
 
-              <div class="select-row underline">
-                <div class="width50" >
-                  <label for="certification-agency" class="fontSize15 label">자격증 발급 기관</label>
-                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
-                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
+              <div class="certi-con underline2">
+                <div class="certi-label" >
+                  <label for="certification-agency" class="fontSize15 label">자격증 발급기관/ </label>
                   
+                  <label for="certification-num" class="fontSize15 label">자격증 번호</label>
                 </div>
 
-                <div class="width50">
-                  <label for="certification-num" class="fontSize15 label">자격증 발급 번호</label>
-                  <input type="text" id="certification-num" name="certification-num" class="form-control">
-                  <input type="text" id="certification-num" name="certification-num" class="form-control">
+                <div class="certi-label">
+                  <input type="text" id="certification-agency" name="certification-num" class="form-control" style=" margin-right: 10px;" placeholder="자격증 발급기관을 입력하세요">
+                  <input type="text" id="certification-num" name="certification-num" class="form-control"
+                  placeholder="자격증 번호를 입력하세요">
+                </div>
+
+                <div class="certi-label">
+                  <input type="text" id="certification-agency" name="certification-num" class="form-control" style=" margin-right: 10px;" placeholder="자격증 발급기관을 입력하세요">
+                  <input type="text" id="certification-num" name="certification-num" class="form-control"
+                  placeholder="자격증 번호를 입력하세요">
                 </div>
               </div>
           
