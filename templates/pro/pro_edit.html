@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전문가정보 수정하기</title>
-  <link rel="stylesheet" href="/static/css/user/certify.css">
   <link rel="stylesheet" href="/static/css/user/edit.css">
+  <link rel="stylesheet" href="/static/css/user/certify.css">
   <link rel="stylesheet" href="/static/css/user/withdrawmodal.css">
   <link rel="stylesheet" href="/static/css/main/common.css">
+
+  
 </head>
 <body>
   <div class="detail-container">
@@ -38,7 +40,7 @@
           </div>
 
           <!-- 입력 폼 -->
-          <div>
+          <div style="width: 100%;">
             <form name="proEdit" id="pro-edit">
               <div class="col underline">
                 <label for="name" class="fontSize15 label">전문가 활동 이름</label>
@@ -97,23 +99,28 @@
                 </select> 
               </div>
 
-              <div class="col underline">
+              <div class="col underline2">
                 <label for="upload" class="fontSize15 label">자격증 사진첨부</label>
-                <input type="file" class="pro-form-control" id="upload" name="files" multiple>
+                <input type="file" class="form-control" id="upload" name="files" multiple>
               </div>
 
-              <div class="select-row underline">
-                <div class="width50" >
-                  <label for="certification-agency" class="fontSize15 label">자격증 발급 기관</label>
-                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
-                  <input type="text" id="certification-agency" name="certification-agency" class="form-control">
+              <div class="certi-con underline2">
+                <div class="certi-label" >
+                  <label for="certification-agency" class="fontSize15 label">자격증 발급기관/ </label>
                   
+                  <label for="certification-num" class="fontSize15 label">자격증 번호</label>
                 </div>
 
-                <div class="width50">
-                  <label for="certification-num" class="fontSize15 label">자격증 발급 번호</label>
-                  <input type="text" id="certification-num" name="certification-num" class="form-control">
-                  <input type="text" id="certification-num" name="certification-num" class="form-control">
+                <div class="certi-label">
+                  <input type="text" id="certification-agency" name="certification-num" class="form-control" style=" margin-right: 10px;" placeholder="자격증 발급기관을 입력하세요">
+                  <input type="text" id="certification-num" name="certification-num" class="form-control"
+                  placeholder="자격증 번호를 입력하세요">
+                </div>
+                
+                <div class="certi-label">
+                  <input type="text" id="certification-agency" name="certification-num" class="form-control" style=" margin-right: 10px;" placeholder="자격증 발급기관을 입력하세요">
+                  <input type="text" id="certification-num" name="certification-num" class="form-control"
+                  placeholder="자격증 번호를 입력하세요">
                 </div>
               </div>
           
@@ -123,10 +130,6 @@
                 <textarea maxlength="400" class="textarea"></textarea>
                 
               </div>
-
-
-
-
 
               <div class="left">
                 <button type="submit" class="probtn">수정완료</button>
