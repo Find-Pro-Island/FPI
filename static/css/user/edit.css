@@ -1,21 +1,11 @@
-.aside > button{
-  border-style: none;
-  background-color: white;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-}
 .detail-container {
   width: 100%;
 }
 .detail-container > .container{
   display: flex;
   width: 1200px;
-  padding: 0 16px;
-  margin: 40px auto;
+  padding: 10px 16px;
+  margin: 0px auto 40px;
   min-height: 600px;
 }
 .aside{
@@ -26,6 +16,26 @@
 .aside h1{
   margin: 0.3rem 0 0.7rem 0;
 }
+.hr{
+  height: 1px;
+  margin: 15px 0;
+  border: none;
+  flex-shrink: 0;
+  background-color: #e4e5ed;
+  background-color: #303441;
+  height: 2px;
+
+}
+.aside > button{
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+}
 .aside a,.aside button{
   padding: 8px 20px;
   font-size: 17px;
@@ -34,37 +44,6 @@
   align-items: center;
   &:hover{
     font-weight: 700;}
-}
-/* 프로필사진 변경 관련 */
-.file-upload{
-  margin-top: 10px;
-}
-#customButton {
-  border: 1px solid #68696b;
-  color: #8da4d0;
-  background-color: white;
-  padding: 8px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-#pro-customButton {
-  background-color: #F8CACC;
-  border: 1px solid #d0aaac;
-  color: #806869;
-  padding: 8px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/* 파일경로 숨김 */
-.file-upload input[type="file"] {
-  /* font-size: 100px; */
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
 }
 
 .marginL-40{
@@ -79,37 +58,57 @@
   font-size: 14px;
   font-weight: bold;
 }
+/* 프로필사진 변경 관련 */
+.file-upload{
+  margin-top: 10px;
+}
+#customButton {
+  border: 1px solid #68696b;
+  color:#8da4d0;
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
 
+  &:hover{
+    font-weight: 700;
+  }
+}
+
+#pro-customButton {
+  border: 1px solid #68696b;
+  color:#F8CACC;
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover{
+  font-weight: bolder;
+  }
+}
+
+
+/* 파일추가안보임 */
+.file-upload input[type="file"] {
+  /* font-size: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  opacity: 0; */
+  display: none;
+}
 
 .marginR-40{
-  margin-right: 40px;
-}
-
-.hr{
-  height: 1px;
-  margin: 15px 0;
-  border: none;
-  flex-shrink: 0;
-  background-color: #e4e5ed;
-  background-color: #303441;
-  height: 2px;
-
-}
-.container .sub-container{
-  margin-top: 20px;
-  padding: 40px;
-  border: 1px solid rgb(228, 229, 237);
-  border-radius: 10px;
+  padding-right: 40px;
   display: flex;
-  min-width: 800px;
+  flex-direction: column;
+  align-items: center;
 }
-.sub-container .underline{
-  width: 600px;
-  border-bottom: .0625rem solid;
-  border-color: #f2f2f2;
-  margin-bottom: 0.7rem;
-}
-.sub-container .underline p, #user-edit div,#pro-edit div{
+
+#user-edit div,#pro-edit div{
   margin: 10px 0 8px 0;
 }
 .fontSize15{
@@ -122,6 +121,7 @@
   border: 1px solid rgb(228, 229, 237);
   border-radius: 5px;
 }
+
 /* span한줄 정렬 */
 .oneline{
   margin: 1rem 0 ;
@@ -145,10 +145,10 @@
   width: 100%;
   height: inherit;
   padding: 8px 10px;
-  letter-spacing:5px;
+  letter-spacing:2px;
   &:hover,&:focus{
     position: inherit;
-    border-color: #8da4d0;
+    border-color:  #8da4d0;
   }
   &:focus{
     outline: none;
@@ -156,28 +156,11 @@
 }
 
 #pro-edit .form-control{
-  display: block;
-  border-radius: 4px;
-  border: 1px solid #e0e0e0;
-  font-size: 14px;
-  line-height: 24px;
-  color: #616161;
-  font-weight: 400;
-  width: 100%;
-  height: inherit;
-  padding: 8px 10px;
-  letter-spacing:5px;
   &:hover,&:focus{
-    position: inherit;
-    border-color:  #F8CACC;
+    border-color:  #F8CACC !important;
   }
-  &:focus{
-    outline: none;
-  }
+
 }
-
-
-
 .label{
   display: inline-block;
   margin-bottom: .5rem;
@@ -188,6 +171,7 @@
   width: 100%;
   margin-bottom: 0.3rem;
 }
+
 #user-edit .col p,#pro-edit .col p{
   margin: 5px 0 8px 0;
   font-size: 13px;
@@ -201,6 +185,9 @@ input:read-only{
     border-color: #e0e0e0;
   }
 }
+
+/* select, option디자인 관련 */
+
 .select-row{
   display: flex;
   width: 100%;
@@ -208,7 +195,7 @@ input:read-only{
 }
 .form-select{
   display: block;
-  width: 98%;
+  width: 100%;
   padding: .375rem 2.25rem .375rem .75rem;
   font-size: 1rem;
   border-color: #e0e0e0;
@@ -217,12 +204,14 @@ input:read-only{
   background:url('/static/img/arrow.svg') no-repeat 97% 50%/15px auto;
   &:hover,&:focus{
     position: inherit;
-    border-color: #8da4d0;
+    border-color: #93A9D1;
   }
   &:focus{
     outline: none;
   }
+
 }
+
 #pro-edit .form-select{
   display: block;
   width: 98%;
@@ -240,25 +229,30 @@ input:read-only{
     outline: none;
   }
 
-  }
+}
 
 .width50{
   flex: 0 0 auto;
   width: 50%;
   margin: 0 0 17px 0 !important;
-}
-
-.height200 textarea{
-  &:hover {
-    border-color: #F8CACC
+  &>.form-control{
+    width: 98%;
+    margin-bottom: 10px;
   }
 }
 
+
+#pro-edit .height200 textarea{
+  &:hover {
+    border-color: #F8CACC !important;
+  }
+}
 
 /* 버튼 왼쪽하단위치 */
 .left{
   display: flex;
   justify-content: flex-end;
+  margin: 30px 0 0 0 !important;
 
 }
 /* 수정완료 버튼 디자인 */
@@ -274,35 +268,28 @@ input:read-only{
   padding: 11px 5px;
   background-color: #8da4d0;
   color: #fff;
-  border: #8da4d0;
+  border:1px solid #7a8eb5;
   font-size: 16px;
   line-height: 26px;
   font-weight:500;
+  
   &:hover{
     color: rgb(255, 255, 255);
-    font-weight: 700;
+    font-weight: bolder;
   }
 }
 
+
 /* 수정완료 버튼 디자인 */
 .left >.probtn{
-  border-style: none;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border-radius: 4px;
-  padding: 11px 5px;
-  background-color: #F8CACC;
-  color: #806869;
-  border: 1px solid #d0aaac;
+
+  background-color: #F8CACC !important;
+  color: #323232 !important;
+  border: 1px solid #d0aaac !important;
   font-size: 16px;
   line-height: 26px;
-  font-weight:500;
+  font-weight:400;
   &:hover{
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: bolder !important;
   }
 }

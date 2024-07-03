@@ -82,26 +82,27 @@
   border-radius: 4px;
   padding: 11px 0px;
   margin-top: 24px;
-  background-color:#93A9D1;
-  color: #fff;
-  border: 1px solid #7a8eb5;
+  background-color:#8da4d0;
+  border:2px solid #8da4d0;
+  color: #fff !important;
   width: 100%;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   &:hover,&:focus{
     position: inherit;
-    font-weight: bolder;
+    font-weight: bolder !important;
+    border: 2px solid #7a8eb5 !important;
   }
 }
 .pro-btn{
   background-color:#F8CACC;
-  color: #020202;
+  color: #020202 !important;
   border: 1.3px solid #F8CACC;
   &:hover,&:focus{
     position: inherit;
-    border-color: #F8CACC;
-    border: 1.3px solid #d0aaac;
+    border-color: #F8CACC !important;
+    border: 1.3px solid #d0aaac  !important;
   }
 
 }
