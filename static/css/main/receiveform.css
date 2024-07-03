@@ -1,0 +1,105 @@
+.detail-container {
+  width: 100%;
+}
+.detail-container > .container{
+  width: 1200px;
+  padding: 0 16px;
+  margin: 40px auto;
+  min-height: 600px;
+}
+.detail-container > .container .title{
+  display: inline-block;
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-top: 5px solid #8da4d0;
+    padding-top: 15px;
+}
+.detail-container > .container .pro-title{
+  display: inline-block;
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-top: 5px solid #f8cacc;
+    padding-top: 15px;
+}
+
+
+.request-info{
+  /* display: flex; */
+  margin:0 1rem;
+}
+
+.form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 9px;
+  border: 1px solid #ddd;
+  /* text-align: left; */
+}
+table th {
+  background-color: #f2f2f2;
+}
+
+.recevieform-container input{
+  width: 98%;
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  letter-spacing : 0.08rem;
+  word-spacing : .2rem;
+    &:hover,&:focus{
+    position: inherit;
+    border-color: #8da4d0;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+#pro_recevieform input,#pro_recevieform select,#pro_recevieform textarea{    
+  &:hover,&:focus{
+  position: inherit;
+  border-color: #f8cacc;
+}}
+
+#pro_recevieform button{
+  background-color:  #f8cacc;
+  border: 1px solid #d0aaac;
+  color: #323232 ;
+  &:hover{
+    font-weight: 600;
+  }
+}
+
+
+.recevieform-container .price td{
+  padding: 8px 20px 8px 12px ;
+}
+
+.category-td .form-select{
+  width: 100%;
+  background:url('/static/img/arrow.svg') no-repeat 98% 50%/15px auto;
+}
+
+
+/* input number타입 화살표없앰 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
