@@ -120,17 +120,21 @@ h1{
 
 .main-container-list{
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 /*  ------------------------------------FAQ부분----------------------------------------------------  */
 
 .FAQ-container{
-    display: flex;
-    justify-content: space-between;
     line-height: 24px;
     color: #363a3c;
 }
+
+.FAQ-container ul{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .FAQ-container ul li{
     list-style: none;

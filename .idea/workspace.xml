@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7474ea41-44df-49a1-b1be-60bcdf85e5b2" name="변경" comment="" />
+    <list default="true" id="7474ea41-44df-49a1-b1be-60bcdf85e5b2" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/common(3)/FindPro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/common(3)/FindUser.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common(3)/FindPro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common(3)/FindUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/admin/FAQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/admin/FAQ.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/admin/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/admin/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/common(1)/DetailForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/common(1)/DetailForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common(1)/Community.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common(1)/Community.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common(1)/DetailForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common(1)/DetailForm.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +51,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web/git/workspace/project/static/css/common(1)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Web/git/workspace/project/templates/common(3)&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -53,6 +66,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Web\git\workspace\project\templates\common(3)" />
+      <recent name="C:\Web\git\workspace\project\static\css\common(3)" />
       <recent name="C:\Web\git\workspace\project\static\css\common(1)" />
       <recent name="C:\Web\git\workspace\project\templates\common(1)" />
       <recent name="C:\Web\git\workspace\project\templates\admin" />
@@ -83,6 +98,10 @@
       <workItem from="1719534827855" duration="12000" />
       <workItem from="1719946167963" duration="13246000" />
       <workItem from="1719978545468" duration="55000" />
+      <workItem from="1719978674723" duration="27000" />
+      <workItem from="1720041455980" duration="12100000" />
+      <workItem from="1720055051195" duration="1418000" />
+      <workItem from="1720076315064" duration="183000" />
     </task>
     <servers />
   </component>
