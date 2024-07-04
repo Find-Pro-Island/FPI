@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>커뮤니티</title>
-    <link rel="stylesheet" href="../../static/css/common(1)/Community.css">
+    <link rel="stylesheet" href="../../static/css/common(1)/CommunityNewVer.css">
 </head>
 <body>
 <div class="main">
@@ -22,14 +22,17 @@
         </div>
 
         <div class="community-container">
-            <div class="category-list">
-                <ul>
-                    <li class="selected"><a>전체</a></li>
-                    <li><a>자유게시판</a></li>
-                    <li><a>프로 팁</a></li>
-                </ul>
-            </div>
             <div class="content-layout">
+                <div class="sorting-options">
+                    <input type="radio" id="sort-newest" name="sort-option" value="newest" checked>
+                    <label for="sort-newest">전체</label>
+
+                    <input type="radio" id="sort-oldest" name="sort-option" value="oldest">
+                    <label for="sort-oldest">자유게시판</label>
+
+                    <input type="radio" id="sort-views" name="sort-option" value="views">
+                    <label for="sort-views">프로팁</label>
+                </div>
                 <div class="feed">
                     <ul class="feed-list">
 <!--                        더미데이터 시작            -->

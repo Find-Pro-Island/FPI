@@ -20,18 +20,19 @@ body{
 }
 
 .in-header{
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 5%;
     position: relative;
-    align-items: center;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
-    height: 71px;
+    align-items: center;
     justify-content: space-between;
+    width: 60.625rem;
+    height: 4.5rem;
 }
 
 .logo{
     display: flex;
+    align-items: center;
 }
 
 .navigation {
